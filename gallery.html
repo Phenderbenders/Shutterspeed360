@@ -1,10 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery - ShutterSpeed360</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -81,6 +82,14 @@
       text-decoration: none;
     }
   </style>
+
+  <!-- 🔒 Disable right-click -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+      alert('Right-click is disabled to protect images on this site.');
+    });
+  </script>
 </head>
 <body>
   <header>ShutterSpeed360 - Gallery</header>
@@ -90,25 +99,3 @@
     <a href="gallery.html">Gallery</a>
     <a href="about.html">About</a>
     <a href="stories.html">Stories</a>
-  </nav>
-
-  <div class="gallery">
-    <a href="photo1.jpg" target="_blank"><img src="photo1.jpg" alt="Photo 1"></a>
-    <a href="photo2.jpg" target="_blank"><img src="photo2.jpg" alt="Photo 2"></a>
-    <a href="photo3.jpg" target="_blank"><img src="photo3.jpg" alt="Photo 3"></a>
-    <a href="photo4.jpg" target="_blank"><img src="photo4.jpg" alt="Photo 4"></a>
-    <a href="photo5.jpg" target="_blank"><img src="photo5.jpg" alt="Photo 5"></a>
-    <a href="photo6.jpg" target="_blank"><img src="photo6.jpg" alt="Photo 6"></a>
-    <a href="photo7.jpg" target="_blank"><img src="photo7.jpg" alt="Photo 7"></a>
-    <a href="photo8.jpg" target="_blank"><img src="photo8.jpg" alt="Photo 8"></a>
-    <a href="photo9.jpg" target="_blank"><img src="photo9.jpg" alt="Photo 9"></a>
-    <a href="photo10.jpg" target="_blank"><img src="photo10.jpg" alt="Photo 10"></a>
-  </div>
-
-  <footer>
-    &copy; 2025 Sergio Blandon | All rights reserved |
-    <a href="mailto:sergioblandonphotography@gmail.com">Email Me</a>
-  </footer>
-</body>
-</html>
-
