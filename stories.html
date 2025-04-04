@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -40,45 +40,33 @@
       font-weight: bold;
     }
 
-    .story-entry {
-      max-width: 80%;
+    .story-preview {
+      max-width: 800px;
       margin: 40px auto;
       padding: 30px;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.6);
-      backdrop-filter: blur(8px);
-      animation: fadeInUp 1s ease both;
+      transition: transform 0.3s ease;
     }
 
-    .story-entry h2 {
-      font-family: 'Playfair Display', serif;
+    .story-preview:hover {
+      transform: translateY(-5px);
+    }
+
+    .story-preview a {
       color: #f0c040;
+      text-decoration: none;
+    }
+
+    .story-preview h2 {
+      font-family: 'Playfair Display', serif;
       margin-bottom: 10px;
     }
 
-    .story-entry p {
-      line-height: 1.7;
-      color: #e0e0e0;
-      margin-bottom: 15px;
-    }
-
-    .story-entry em {
-      display: block;
-      margin-bottom: 20px;
-      font-style: italic;
+    .story-preview p {
       color: #ccc;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -92,42 +80,25 @@
     <a href="stories.html">Stories</a>
   </nav>
 
-  <div class="story-entry">
-    <h2>Picture This: The Fascinating Evolution of Photography</h2>
-    <em>By Sergio Blandon</em>
-    <p>Professor Alistair V. Moretti returned to Leo’s classroom, his signature grin in place. This time, he held up his smartphone.</p>
-    <p>"Alright, kids," he said, "take out your phones. I want each of you to take a picture of something. Anything. Ready, go!"</p>
-    <p>The class burst into action, snapping pictures of their desks, their friends, even Professor Moretti himself. Within seconds, the photos were shared around the room.</p>
-    <p>"Now," Professor Moretti said, raising his hand to quiet the chatter, "how long did it take for you to see your pictures?"</p>
-    <p>"Like, a second!" one student replied.</p>
-    <p>Professor Moretti nodded. "Exactly. Now let me ask you this. Can anyone guess how long it took to take a photograph of President Abraham Lincoln?"</p>
-    <p>The students looked at each other, puzzled.</p>
-    <p>"Ten seconds?" one guessed.</p>
-    <p>"Two minutes?" another tried.</p>
-    <p>"It actually took up to 15 minutes back then. People had to sit completely still the entire time or the picture would come out blurry."</p>
-    <p>He added, "Lincoln’s portraits were taken using the wet plate collodion method. Photographers had to coat a glass plate with chemicals, expose it, and develop it all before the chemicals dried. If they messed up, they had to start over."</p>
-    <p>"Whoa," Leo said. "That’s nothing like now."</p>
-    <p>"Exactly," Professor Moretti smiled. "We’ve come a long way. But back then, photography was about patience, skill, and creativity."</p>
-    <p>He shifted the class forward in time. "When your grandparents were young, cameras used something called film. Has anyone seen a roll of film?"</p>
-    <p>"I think my mom has one of those cameras where you put film in the back."</p>
-    <p>"Exactly. You’d take pictures without knowing how they’d turn out. After finishing the roll, you'd send it to a photo lab and wait days, maybe weeks, to get them back."</p>
-    <p>"Weeks?!" one student gasped. "What if they didn’t come out right?"</p>
-    <p>"Then you learned from it," he chuckled. "You didn’t see mistakes until later, so photographers had to know what they were doing. They had to understand exposure."</p>
-    <p>"What’s exposure?" a student asked.</p>
-    <p>"Good question. Exposure is how much light you let into the camera to make the picture. Think of it like baking cookies..."</p>
-    <p>The students perked up. He continued, comparing light to baking time—too much and the photo burns, too little and it’s raw. "You control that using aperture, shutter speed, and ISO."</p>
-    <p>He explained how photographers once used light meters and experience to set everything manually. "Even now, if you want to take great photos, you still need to understand exposure. That’s the difference between snapping and creating."</p>
-    <p>"So did Ansel Adams do all that?" someone asked.</p>
-    <p>"Absolutely. He created the Zone System—a way to control brightness and contrast in every part of a black-and-white photo. He could imagine the final image before pressing the shutter."</p>
-    <p>Moretti described Adams’ darkroom process. "Developing film was a ritual. If light touched it too early, it was ruined. Timing, temperature, and chemistry had to be perfect. You watched images appear slowly in developer trays, like magic."</p>
-    <p>The students were hooked. One whispered, "That sounds really hard."</p>
-    <p>"It was," he said, "but every image felt earned. Today we take pictures in seconds, but back then, you had to work for it."</p>
-    <p>He paused and looked around the room. "So next time you snap a photo with your phone, remember—there was a time when making a picture was an art, a science, and a whole lot of work."</p>
+  <!-- Story #1 (Now First) -->
+  <div class="story-preview">
+    <a href="story-oil.html">
+      <h2>Oil</h2>
+      <p>Professor Moretti explains how oil may have helped cool the Earth — and what happens now that we’re taking it all out.</p>
+    </a>
+  </div>
+
+  <!-- Story #2 -->
+  <div class="story-preview">
+    <a href="story-evolution-of-photography.html">
+      <h2>Picture This: The Fascinating Evolution of Photography</h2>
+      <p>From wet plates to smartphones, Professor Moretti takes a classroom through the incredible journey of photography.</p>
+    </a>
   </div>
 
   <footer style="margin-top: 60px; padding: 30px; background: #111; color: #aaa; text-align: center; font-size: 0.9em;">
-    &copy; 2025 Sergio Blandon | All rights reserved | <a href="mailto:sergioblandonphotography@gmail.com" style="color: #f0c040; text-decoration: none;">Email Me</a>
+    &copy; 2025 Sergio Blandon | All rights reserved |
+    <a href="mailto:sergioblandonphotography@gmail.com" style="color: #f0c040; text-decoration: none;">Email Me</a>
   </footer>
 </body>
 </html>
-
